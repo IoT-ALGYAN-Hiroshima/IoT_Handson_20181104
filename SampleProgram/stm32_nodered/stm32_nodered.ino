@@ -104,7 +104,7 @@ void loop() {
   Serial.print(">\n");
 #if 1
   long now = millis();
-  if (now - lastMsg > 1000) {
+  if (now - lastMsg > 100) {
     lastMsg = now;
     ++value;
     snprintf (msg, 75, "hello world #%ld", value);

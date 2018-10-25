@@ -57,11 +57,11 @@
 #include "wl_definitions.h"
 
 /* Exported macro-------------------------------------------------------------*/
-#define MIN(a, b)  ((a) < (b) ? (a) : (b))
 
 #define AT_OK_STRING "\r\nOK\r\n> "
 #define AT_OK_STRING_LEN (sizeof(AT_OK_STRING) - 1)
 #define AT_ERROR_STRING "\r\nERROR"
+#define AT_ERROR_STRING_LEN              40
 
 /* List of AT Command                                                        */
 /* -------------------------access point command---------------------------- */
@@ -214,8 +214,7 @@
 
 #define SUFFIX_CMD                       "\r"
 
-typedef struct
-{
+typedef struct {
   uint32_t Port;
   uint32_t BaudRate;
   uint32_t DataWidth;
@@ -225,8 +224,7 @@ typedef struct
 }ES_WIFI_UARTConfig_t;
 
 
-typedef struct
-{
+typedef struct {
   uint32_t Configuration;
   uint32_t WPSPin;
   uint32_t VID;
