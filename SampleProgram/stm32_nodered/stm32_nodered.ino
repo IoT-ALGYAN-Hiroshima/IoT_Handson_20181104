@@ -3,9 +3,9 @@
 
 // Update these with values suitable for your network.
 
-char* ssid = "********";                     /* šššš ƒAƒNƒZƒXƒ|ƒCƒ“ƒgSSID‚ğ‹LÚ šššš */
-const char* password = "********;            /* šššš ƒpƒXƒ[ƒh‚ğ‹LÚ šššš */
-const char* mqtt_server = "***.***.***.***"; /* šššš Ú‘±æIPƒAƒhƒŒƒX‚ğ‹LÚ šššš */
+char* ssid = "********";                     /* â˜…â˜…â˜…â˜… ã‚¢ã‚¯ã‚»ã‚¹ãƒã‚¤ãƒ³ãƒˆSSIDã‚’è¨˜è¼‰ â˜…â˜…â˜…â˜… */
+const char* password = "********";           /* â˜…â˜…â˜…â˜… ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¨˜è¼‰ â˜…â˜…â˜…â˜… */
+const char* mqtt_server = "***.***.***.***"; /* â˜…â˜…â˜…â˜… æ¥ç¶šå…ˆIPã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¨˜è¼‰ â˜…â˜…â˜…â˜… */
 
 SPIClass SPI_3(PC12, PC11, PC10);
 WiFiClass WiFi(&SPI_3, PE0, PE1, PE8, PB13);
