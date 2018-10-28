@@ -1,0 +1,41 @@
+[
+    {
+        "id": "30fdd7c2.e715b8",
+        "type": "tab",
+        "label": "Mosca",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "30e9835e.3330ec",
+        "type": "mosca in",
+        "z": "30fdd7c2.e715b8",
+        "mqtt_port": "1883",
+        "mqtt_ws_port": 8080,
+        "name": "",
+        "username": "mqtt",
+        "password": "mqtt",
+        "dburl": "",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "9c0d550d.91e298"
+            ]
+        ]
+    },
+    {
+        "id": "9c0d550d.91e298",
+        "type": "debug",
+        "z": "30fdd7c2.e715b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 370,
+        "y": 140,
+        "wires": []
+    }
+]
