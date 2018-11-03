@@ -16,6 +16,10 @@
 // ３Ｄジャイロセンサ・加速度センサーライブラリ
 #include <LSM6DSLSensor.h>
 
+// STL ライブラリ
+#include <iterator>
+#include <list>
+
 #define I2C2_SCL    PB10
 #define I2C2_SDA    PB11
 
@@ -28,6 +32,9 @@ volatile int mems_event = 0;
 uint16_t step_count = 0;
 // シリアル出力バッファ
 char report[256];
+
+// STL ネームスペース指定
+using namespace std;
 
 // 割り込みハンドラ
 void INT1Event_cb();
