@@ -8,6 +8,8 @@
  * @date   2018.09.09
  */
 
+#define LED2 LED_BUILTIN
+
 /**
  * Arduinoの初期化を行います
  */
